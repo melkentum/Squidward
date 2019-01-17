@@ -6,6 +6,7 @@
 
     <groupId>de.dennis_kempf.squidward</groupId>
     <artifactId>squidward</artifactId>
+    <packaging>pom</packaging>
     <version>0.0.0</version>
 
     <build>
@@ -21,12 +22,7 @@
         </plugins>
     </build>
 
-    <dependencies>
-        <!-- https://mvnrepository.com/artifact/com.google.code.findbugs/jsr305 -->
-        <dependency>
-            <groupId>com.google.code.findbugs</groupId>
-            <artifactId>jsr305</artifactId>
-            <version>3.0.2</version>
-        </dependency>
-    </dependencies>
+    <modules>
+        <module>core</module>
+    </modules>
 </project>
