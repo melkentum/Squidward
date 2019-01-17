@@ -1,0 +1,4 @@
+@ParametersAreNonnullByDefault
+package de.dennis_kempf.squidward;
+
+import javax.annotation.ParametersAreNonnullByDefault;
