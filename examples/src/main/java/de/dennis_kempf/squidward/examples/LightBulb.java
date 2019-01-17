@@ -4,7 +4,7 @@ import de.dennis_kempf.squidward.Automaton;
 import de.dennis_kempf.squidward.ImmutableAutomaton;
 import de.dennis_kempf.squidward.State;
 
-import java.util.Scanner;
+import static de.dennis_kempf.squidward.examples.ExampleUtils.readLine;
 
 /**
  * Very simple example controlling a two-state light bulb using the console.
@@ -48,9 +48,5 @@ public class LightBulb {
             String line = readLine(); // Read single line from console
             automaton.post(line); // Forward read line to automaton
         }
-    }
-
-    private static String readLine() {
-        return new Scanner(System.in).nextLine();
     }
 }

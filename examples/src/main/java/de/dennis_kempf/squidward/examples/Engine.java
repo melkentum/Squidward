@@ -4,7 +4,8 @@ import de.dennis_kempf.squidward.Automaton;
 import de.dennis_kempf.squidward.ImmutableAutomaton;
 import de.dennis_kempf.squidward.State;
 
-import java.util.Scanner;
+import static de.dennis_kempf.squidward.examples.ExampleUtils.delay;
+import static de.dennis_kempf.squidward.examples.ExampleUtils.readLine;
 
 /**
  * This example showcases the basic usage of enumeration values as states and
@@ -56,18 +57,6 @@ public class Engine {
             String line = readLine();
             automaton.post(line);
         }
-    }
-
-    private static void delay(int millis) {
-        try {
-            Thread.sleep(millis);
-        } catch (InterruptedException e1) {
-            Thread.currentThread().interrupt();
-        }
-    }
-
-    private static String readLine() {
-        return new Scanner(System.in).nextLine();
     }
 
     private enum EngineState implements State {
